@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "club-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "port": 3000
+    },
+    {
+      "name": "club-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3002"],
+      "port": 3002
+    },
+    {
+      "name": "club-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "wrangler", "pages", "dev", "out", "--port", "8788"],
+      "port": 8788
+    }
+  ]
+}
